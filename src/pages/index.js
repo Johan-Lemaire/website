@@ -1,3 +1,10 @@
-import React from "react"
+import React from "react";
+import Layout from "../components/Layout/layout";
 
-export default () => <div>Hello world!</div>
+const Index = () => (
+  <Layout>
+    <div>Accueil</div>
+  </Layout>
+);
+    
+export default Index;
