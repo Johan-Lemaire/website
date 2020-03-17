@@ -15,17 +15,20 @@
   },
   "dependencies": {
     "gatsby": "^2.19.43",
+    "gatsby-plugin-sass": "^2.1.31",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-icons": "^3.9.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/Johan-Lemaire/website"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Johan-Lemaire/website/issues"
   }
 }

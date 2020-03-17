@@ -1,0 +1,39 @@
+@import "../../styles/vars.scss";
+
+
+.navigationBar {
+  background-color: $darkGrey;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+  &_list {
+    display: flex;
+    justify-content: space-around;
+    
+    & > li {
+      margin-bottom: -3px;
+    }
+    
+    &_link {
+      font-size: 0;
+      color: $lightGrey;
+      
+      &_icon {
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
+        width: calc(100vw/4);
+        
+        &:hover {
+          color: $blue;
+          background-color: $grey;
+        }
+      }
+
+      &_active > :nth-child(1n) {
+        color: $blue;
+        background-color: $grey;
+      }
+    }   
+  }
+}
