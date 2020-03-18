@@ -1,8 +1,7 @@
 @import "../../styles/vars.scss";
 
-
 .navigationBar {
-  background-color: $darkGrey;
+  background-color: $black;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -12,28 +11,57 @@
     justify-content: space-around;
     
     & > li {
-      margin-bottom: -3px;
+      margin-bottom: -5px;
     }
-    
+
     &_link {
-      font-size: 0;
       color: $lightGrey;
       
       &_icon {
         font-size: 1.5rem;
-        padding: 1.5rem 0;
+        padding: 1.2rem 0;
         width: calc(100vw/4);
-        
+
         &:hover {
           color: $blue;
-          background-color: $grey;
         }
       }
 
       &_active > :nth-child(1n) {
         color: $blue;
-        background-color: $grey;
       }
     }   
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navigationBar {
+    height: 100vh;
+    width: 60px;
+    right: 0;
+ 
+    &_list {
+      flex-direction: column;
+            
+      &_link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-bottom: 4px;
+
+        &:hover > :nth-child(1n) {
+          opacity: 0;
+        }
+
+        &:hover:after {
+          content: attr(data-hover);
+          font-size: 0.7rem;
+          color: $blue;
+          margin: 0 calc(100%/2);
+          font-weight: bold;
+        }
+      }   
+    }
   }
 }
