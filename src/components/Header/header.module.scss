@@ -3,7 +3,6 @@
 .navigationBar {
   background-color: $black;
   position: fixed;
-  bottom: 0;
   width: 100%;
   
   &_list {
@@ -21,10 +20,6 @@
         font-size: 1.5rem;
         padding: 1.2rem 0;
         width: calc(100vw/4);
-
-        &:hover {
-          color: $blue;
-        }
       }
 
       &_active > :nth-child(1n) {
@@ -60,6 +55,11 @@
           color: $blue;
           margin: 0 calc(100%/2);
           font-weight: bold;
+          // Need to fix the transition WIP
+          -webkit-transition: all 2s ease-out 1s;
+          -moz-transition: all 2s ease-out 1s;
+          -o-transition: all 2s ease-out 1s;
+          transition: all 2s ease-out 1s;
         }
       }   
     }

@@ -1,10 +1,7 @@
 import React from "react";
-import Layout from "../components/Layout/layout";
 
 const Contact = () => (
-  <Layout>
-    <div>Contact</div>
-  </Layout>
+  <div>Contact</div>
 );
     
 export default Contact;

@@ -17,12 +17,13 @@ import headerStyles from "./header.module.scss";
 const Header = () => (
   <>
     <nav className={headerStyles.navigationBar}>
+      <img></img>
       <ul className={headerStyles.navigationBar_list}>
         <li>
           <Link 
             to="/" 
-            className={headerStyles.navigationBar_list_link} 
             activeClassName={headerStyles.navigationBar_list_link_active}
+            className={headerStyles.navigationBar_list_link} 
             data-hover="ACCUEIL"
           >
             <AiOutlineHome className={headerStyles.navigationBar_list_link_icon} />
@@ -31,8 +32,8 @@ const Header = () => (
         <li>
           <Link 
             to="/about" 
-            className={headerStyles.navigationBar_list_link} 
             activeClassName={headerStyles.navigationBar_list_link_active}
+            className={headerStyles.navigationBar_list_link} 
             data-hover="A&nbsp;PROPOS"
           >
             <AiOutlineUser className={headerStyles.navigationBar_list_link_icon} />
@@ -41,8 +42,8 @@ const Header = () => (
         <li>
           <Link 
             to="/projects" 
-            className={headerStyles.navigationBar_list_link}
             activeClassName={headerStyles.navigationBar_list_link_active}
+            className={headerStyles.navigationBar_list_link}
             data-hover="PROJETS"
           >
             <AiOutlineEye className={headerStyles.navigationBar_list_link_icon} />
@@ -51,15 +52,15 @@ const Header = () => (
         <li>
           <Link 
             to="/contact" 
-            className={headerStyles.navigationBar_list_link} 
             activeClassName={headerStyles.navigationBar_list_link_active}
+            className={headerStyles.navigationBar_list_link} 
             data-hover="CONTACT"
           >
             <AiOutlineMail className={headerStyles.navigationBar_list_link_icon} />
           </Link>
         </li>
       </ul>
-      <ul>
+      <ul className={headerStyles.navigationBar_socialList}>
         <li>
           <a>
             <AiOutlineLinkedin />
