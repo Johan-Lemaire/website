@@ -4,7 +4,14 @@
   background-color: $black;
   position: fixed;
   width: 100%;
-  
+
+  &_title {
+    color: $lightGrey;
+    background-color: black;
+    display: inline-block;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
   &_list {
     display: flex;
     justify-content: space-around;
@@ -17,7 +24,7 @@
       color: $lightGrey;
       
       &_icon {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         padding: 1.2rem 0;
         width: calc(100vw/4);
       }

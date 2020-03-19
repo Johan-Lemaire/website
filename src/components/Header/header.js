@@ -7,9 +7,9 @@ import {
   AiOutlineUser,
   AiOutlineEye,
   AiOutlineMail,
-  AiOutlineLinkedin,
-  AiOutlineTwitter,
-  AiOutlineFacebook,
+  // AiOutlineLinkedin,
+  // AiOutlineTwitter,
+  // AiOutlineFacebook,
 } from "react-icons/ai";
 
 import headerStyles from "./header.module.scss";
@@ -17,7 +17,7 @@ import headerStyles from "./header.module.scss";
 const Header = () => (
   <>
     <nav className={headerStyles.navigationBar}>
-      <img></img>
+      
       <ul className={headerStyles.navigationBar_list}>
         <li>
           <Link 
@@ -60,7 +60,7 @@ const Header = () => (
           </Link>
         </li>
       </ul>
-      <ul className={headerStyles.navigationBar_socialList}>
+      {/* <ul className={headerStyles.navigationBar_socialList}>
         <li>
           <a>
             <AiOutlineLinkedin />
@@ -76,7 +76,7 @@ const Header = () => (
             <AiOutlineFacebook />
           </a>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   </>
 );
