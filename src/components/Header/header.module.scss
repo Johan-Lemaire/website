@@ -1,74 +1,132 @@
 @import "../../styles/vars.scss";
 
-.navigationBar {
-  background-color: $black;
-  position: fixed;
-  width: 100%;
 
-  &_title {
-    color: $lightGrey;
-    background-color: black;
-    display: inline-block;
-    padding: 1rem;
-    font-size: 0.8rem;
-  }
-  &_list {
+.navigation {
+
+  &_header {
     display: flex;
-    justify-content: space-around;
-    
-    & > li {
-      margin-bottom: -5px;
-    }
-
-    &_link {
+    justify-content: space-between;
+    background-color: $black;
+  
+    &_logoText {
+      background-color: black;   
+      padding: 0.5rem 1rem;
       color: $lightGrey;
+      font-size: 0.6rem;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+    
+      &_img {
+        width: 20px;
+        margin-bottom: 0.5rem;
+      }
+    }
+    
+    &_burgerIcon {
+      display: inline-block;
+      color: $blue;
+      font-size: 2rem;
+      padding: 1rem;
+    }
+  }
+  
+  &_bar {
+    background-color: $black;
+    position: fixed;
+    width: 100%;
+    left: 100%;
+    opacity: 0;
+    margin-left: 0;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 0;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+  
+    &_show {
+      left: 0;
+      opacity: 1;
+    } 
+    
+    &_list {
+      display: flex;
+      justify-content: space-around;
       
-      &_icon {
-        font-size: 1.8rem;
-        padding: 1.2rem 0;
-        width: calc(100vw/4);
-      }
-
-      &_active > :nth-child(1n) {
-        color: $blue;
-      }
-    }   
+      &_link {
+        color: $lightGrey;
+        text-decoration: none;
+        
+        &_icon {
+          font-size: 1.8rem;
+          padding: 1.1rem 0;
+        }
+  
+        &_active > :nth-child(1n) {
+          color: $blue;
+        }
+      }   
+    }
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .navigationBar {
-    height: 100vh;
+
+  .navigation {
+    position: fixed;
     width: 60px;
     right: 0;
- 
-    &_list {
-      flex-direction: column;
+    
+    &_header {
+         
+      &_burgerIcon {
+        display: none;
+      }
+    }
+    
+    &_bar {
+      position: relative;   
+      height: 100vh;
+      left: 0; 
+      opacity: 1;
+   
+      &_list {
+        flex-direction: column;
+              
+        &_link {
+          
+          &:hover > :nth-child(1n) {
+            -webkit-transition: all .3s ease-in;
+            -moz-transition: all .3s ease-in;
+            -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+            opacity: 0;
+          }
             
-      &_link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        margin-bottom: 4px;
-
-        &:hover > :nth-child(1n) {
-          opacity: 0;
-        }
-
-        &:hover:after {
-          content: attr(data-hover);
-          font-size: 0.7rem;
-          color: $blue;
-          margin: 0 calc(100%/2);
-          font-weight: bold;
-          // Need to fix the transition WIP
-          -webkit-transition: all 2s ease-out 1s;
-          -moz-transition: all 2s ease-out 1s;
-          -o-transition: all 2s ease-out 1s;
-          transition: all 2s ease-out 1s;
-        }
-      }   
+          &::after {
+            content: attr(data-hover);
+            position: absolute;
+            left: 0;
+            right: 0;
+            padding-top: 1.8rem;
+            opacity: 0;
+            font-size: 0.7rem;
+            color: $blue;
+            font-weight: bold;
+          }
+          
+          &:hover::after {
+            opacity: 1;
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+          }
+        }   
+      }
     }
   }
 }
