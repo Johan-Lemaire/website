@@ -1,14 +1,62 @@
+@import "../styles/vars.scss";
+
 .home {
-  padding: 2rem 3rem;
+  width: 80%;
+  margin: 5rem auto 2rem;
   
   &_title {
     font-size: 1.7rem;
     font-weight: bold;
-    line-height: 2rem;
+    line-height: 2.5rem;
+    
+    &_name{
+      
+      &_letter {
+        font-size: 2rem;
+        color: $blue;
+        text-shadow: -1px 0 $lightGrey, -2px 0 $lightGrey;
+      }
+    }
   }
 
   &_text {
-    margin: 1rem 0;
+    margin: 1rem 0 2rem;
     font-size: 0.9rem;
+    color: $lightGrey;
+    font-style: italic;
   }
+
+  &_buttons {
+    display: flex;
+    justify-content: space-between;
+
+    &_button {
+      width: 48%;
+      color: $lightGrey;
+      font-size: .7rem;
+      text-transform: uppercase;
+      padding: .8rem .3rem;
+      border-radius: 25px;
+      background-color: $black;
+      border: none;
+      -webkit-box-shadow: inset 0px 0px 0px 1px $lightGrey;
+      -moz-box-shadow: inset 0px 0px 0px 1px $lightGrey;
+      box-shadow: inset 0px 0px 0px 1px $lightGrey;
+      outline: none;
+
+      &:hover {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background-color: $blue;
+        color: $lightGrey;
+      }
+    }
+  }
+}
+
+.gif {
+  width: 30%;
+  display: block;
+  margin: auto;
 }

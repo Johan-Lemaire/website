@@ -13,12 +13,18 @@ const Index = () => {
   return (
     <>
       <div className={indexStyles.home}>
-        <h1 className={indexStyles.home_title}>Bonjour,<br />Je suis Johan, <br />Développeur Web</h1>
+        <div className={indexStyles.home_title}>
+          <p className={indexStyles.home_title_firstSentence}>Bonjour,</p>
+          <p className={indexStyles.home_title_secondSentence}>Je suis <span className={indexStyles.home_title_name}><span className={indexStyles.home_title_name_letter}>J</span>ohan</span>,</p>
+          <p className={indexStyles.home_title_thirdSentence}>Développeur Web</p>
+        </div>
         <p className={indexStyles.home_text}>Développeur Front End - React</p>
-        <button className={indexStyles.home_button}>Me contacter</button>
-        <button className={indexStyles.home_button}>Télécharger cv</button>
+        <div className={indexStyles.home_buttons}>
+          <button className={indexStyles.home_buttons_button}>Me contacter</button>
+          <button className={indexStyles.home_buttons_button}>Telecharger cv</button>
+        </div>
       </div>
-      <img style={{ width:"20%", display: "block", margin: "auto",}} src={gif}></img>
+      <img className={indexStyles.gif} src={gif}></img>
     </>
   );
 };

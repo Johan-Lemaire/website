@@ -5,12 +5,16 @@ import Header from "../Header/header";
 import "../../styles/reset.css";
 import "../../styles/global.module.scss";
 
-const Layout = ({children,}) => (
-  <div>
-    <Header />
-    <main>{children}</main>
-  </div>
-);
+const Layout = ({children,}) => {
+
+  return (
+    <div>
+      <Header />
+      <main>{children}</main>
+    </div>
+  );
+};
+
 
 
 Layout.propTypes = {
