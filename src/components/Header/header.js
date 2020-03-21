@@ -1,18 +1,15 @@
 import React, { useState,} from "react";
 import {Link,} from "gatsby";
-/* import {FaHome, FaUserTie,} from "react-icons/fa";
-import {MdComputer, MdContactMail,} from "react-icons/md"; */
+import {GiHamburgerMenu,} from "react-icons/gi";
 import {
   AiOutlineHome,
   AiOutlineUser,
   AiOutlineEye,
   AiOutlineMail,
-  // AiOutlineLinkedin,
-  // AiOutlineTwitter,
-  // AiOutlineFacebook,
+  AiOutlineLinkedin,
+  AiOutlineTwitter,
+  AiOutlineFacebook,
 } from "react-icons/ai";
-
-import {GiHamburgerMenu,} from "react-icons/gi";
 
 import headerStyles from "./header.module.scss";
 import logo from "../../ressources/images/logo.png";
@@ -30,7 +27,7 @@ const Header = () => {
   };
   
   return (
-    <div className={headerStyles.navigation}>
+    <header className={headerStyles.navigation}>
       <div className={headerStyles.navigation_header}>
         <Link to="/" className={headerStyles.navigation_header_logoText}>
           <img src={logo} alt="logo du site" className={headerStyles.navigation_header_logoText_img}></img>
@@ -81,27 +78,26 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        {/* <ul className={headerStyles.navigationBar_socialList}>
+        <ul className={headerStyles.navigation_socialList}>
           <li>
-            <a>
-              <AiOutlineLinkedin />
+            <a href="#" className={headerStyles.navigation_socialList_link}>
+              <AiOutlineLinkedin className={headerStyles.navigation_socialList_link_icon} />
             </a>
           </li>
           <li>
-            <a>
-              <AiOutlineTwitter />
+            <a href="#" className={headerStyles.navigation_socialList_link}>
+              <AiOutlineTwitter className={headerStyles.navigation_socialList_link_icon} />
             </a>
           </li>
           <li>
-            <a>
-              <AiOutlineFacebook />
+            <a href="#" className={headerStyles.navigation_socialList_link}>
+              <AiOutlineFacebook className={headerStyles.navigation_socialList_link_icon} />
             </a>
           </li>
-        </ul> */}
+        </ul>
       </nav>
-    </div>  
+    </header>  
   );
 };
-
 
 export default Header;

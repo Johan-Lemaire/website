@@ -1,0 +1,8 @@
+@import "./fonts/fonts.css";
+@import "./vars.scss";
+
+html {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #181818;
+  color: $lightGrey;
+}

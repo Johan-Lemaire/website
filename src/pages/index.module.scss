@@ -1,0 +1,14 @@
+.home {
+  padding: 2rem 3rem;
+  
+  &_title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+
+  &_text {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+}

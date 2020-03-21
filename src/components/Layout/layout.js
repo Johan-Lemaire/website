@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Header from "../Header/header";
 
 import "../../styles/reset.css";
-import "../../styles/fonts/fonts.css";
+import "../../styles/global.module.scss";
 
 const Layout = ({children,}) => (
   <div>

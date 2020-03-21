@@ -6,9 +6,3 @@
     font-family: 'PoppinsBold';
     src: url("../fonts/Poppins-Bold.ttf");
 }
-
-html {
-    font-family: 'Poppins', Arial, sans-serif;
-    background-color: #181818;
-    color: wheat;
-}
