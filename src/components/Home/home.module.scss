@@ -1,0 +1,205 @@
+@import "../../styles/vars.scss";
+
+.home {
+  width: 80%;
+  margin: 4.5rem auto 2rem;
+  
+  &_title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+      
+    &_letter {
+      font-size: 2rem;
+      color: $blue;
+      text-shadow: -1px 0 $lightGrey, -2px 0 $lightGrey;
+    }  
+  }
+
+  &_text {
+    margin: 1rem 0 1.5rem;
+    font-size: 0.8rem;
+    color: #777777;
+    letter-spacing: 0.2rem;
+  }
+
+  &_buttons {
+    display: flex;
+
+    & > :first-child {
+      margin-right: 1.5rem;
+    }
+
+    &_button {
+      cursor: pointer;
+      width: 46%;
+      color: $blue;
+      font-size: .75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: .8rem .3rem;
+      border-radius: 25px;
+      background-color: $darkGrey;
+      border: none;
+      -webkit-box-shadow: inset 0px 0px 0px 1px $blue;
+      -moz-box-shadow: inset 0px 0px 0px 1px $blue;
+      box-shadow: inset 0px 0px 0px 1px $blue;
+      outline: none;
+
+      &:hover {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background-color: $blue;
+        color: $darkGrey;
+      }
+    }
+  }
+}
+
+.gif {
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .container {
+    margin-top: 7rem;
+  }
+
+  .home {
+    width: 60%;
+    
+    &_title {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+
+      &_letter {
+        font-size: 2.5rem;
+      }
+    }
+
+    &_text {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    &_buttons {
+      margin-bottom: 4rem;
+
+      &_button {
+        width: 40%;
+      }
+    }
+  }
+
+  .gif {
+    width: 22%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 12rem 5rem;
+  }
+
+  .home {
+    width: 50%;
+
+    &_title {
+      font-size: 2.5rem;
+      line-height: 3rem;
+
+      &_letter {
+        font-size: 2.5rem;
+      }
+    }
+
+    &_text {
+      font-size: .9rem;
+    }
+
+    &_buttons {
+
+      &_button {
+        width: 200px;
+        font-size: .8rem;
+      }
+    }
+  }
+
+  .gif {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .container {
+    margin: 10rem 12rem;
+  }
+
+  .home {
+    width: 50%;
+    margin-top: 8rem;
+
+    &_title {
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+
+      &_letter {
+        font-size: 3.5rem;
+      }
+    }
+
+    &_text {
+      font-size: 1rem;
+    }
+  }
+
+  .gif {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+
+  .container {
+    margin: 15rem 12rem;
+  }
+
+  .home {
+    width: 50%;
+    margin-top: 8rem;
+
+    &_title {
+      font-size: 5rem;
+      line-height: 8rem;
+
+      &_letter {
+        font-size: 5rem;
+      }
+    }
+
+    &_text {
+      font-size: 1.5rem;
+    }
+
+    &_buttons {
+
+      &_button {
+        width: 300px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .gif {
+    width: 25%;
+  }
+}
