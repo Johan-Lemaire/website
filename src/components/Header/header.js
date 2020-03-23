@@ -49,7 +49,7 @@ const Header = () => {
           </li>
           <li>
             <Link 
-              to="/about" 
+              to="/a-propos" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link} 
               data-hover="A&nbsp;PROPOS"
@@ -59,7 +59,7 @@ const Header = () => {
           </li>
           <li>
             <Link 
-              to="/projects" 
+              to="/projets" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link}
               data-hover="PROJETS"
@@ -69,7 +69,7 @@ const Header = () => {
           </li>
           <li>
             <Link 
-              to="/contact" 
+              to="/me-contacter" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link} 
               data-hover="CONTACT"

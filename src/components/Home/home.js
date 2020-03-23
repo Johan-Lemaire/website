@@ -14,9 +14,46 @@ const Home = () => {
     <div className={homeStyles.container}>
       <div className={homeStyles.home}>
         <div className={homeStyles.home_title}>
-          <p className={homeStyles.home_title_firstSentence}>Bonjour,</p>
-          <p className={homeStyles.home_title_secondSentence}>Je suis <span className={homeStyles.home_title_letter}>J</span>ohan,</p>
-          <p className={homeStyles.home_title_thirdSentence}>Développeur Web</p>
+          <p>
+            <span className={homeStyles.bounce}>B</span>
+            <span className={homeStyles.bounce}>o</span>
+            <span className={homeStyles.bounce}>n</span>
+            <span className={homeStyles.bounce}>j</span>
+            <span className={homeStyles.bounce}>o</span>
+            <span className={homeStyles.bounce}>u</span>
+            <span className={homeStyles.bounce}>r</span>
+            <span className={homeStyles.bounce}>,</span>
+          </p>
+          <p>
+            <span className={homeStyles.bounce}>J</span>
+            <span className={homeStyles.bounce}>e&nbsp;</span>
+            <span className={homeStyles.bounce}>s</span>
+            <span className={homeStyles.bounce}>u</span>
+            <span className={homeStyles.bounce}>i</span>
+            <span className={homeStyles.bounce}>s&nbsp;</span>
+            <span className={homeStyles.home_title_letter}>J</span>
+            <span className={homeStyles.bounce}>o</span>
+            <span className={homeStyles.bounce}>h</span>
+            <span className={homeStyles.bounce}>a</span>
+            <span className={homeStyles.bounce}>n</span>
+            <span className={homeStyles.bounce}>,</span>
+          </p>
+          <p>
+            <span className={homeStyles.bounce}>D</span>
+            <span className={homeStyles.bounce}>é</span>
+            <span className={homeStyles.bounce}>v</span>
+            <span className={homeStyles.bounce}>e</span>
+            <span className={homeStyles.bounce}>l</span>
+            <span className={homeStyles.bounce}>o</span>
+            <span className={homeStyles.bounce}>p</span>
+            <span className={homeStyles.bounce}>p</span>
+            <span className={homeStyles.bounce}>e</span>
+            <span className={homeStyles.bounce}>u</span>
+            <span className={homeStyles.bounce}>r&nbsp;</span>
+            <span className={homeStyles.bounce}>W</span>
+            <span className={homeStyles.bounce}>e</span>
+            <span className={homeStyles.bounce}>b</span>
+          </p>
         </div>
         <p className={homeStyles.home_text}>Développeur Front End - React</p>
         <div className={homeStyles.home_buttons}>
