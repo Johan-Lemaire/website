@@ -26,17 +26,17 @@
     display: flex;
     
     & > :first-child {
-      margin-right: 1.5rem;
+      margin-right: 1rem;
     }
     
     &_button {
       cursor: pointer;
-      width: 46%;
       color: $blue;
       font-size: .75rem;
+      letter-spacing: .05rem;
       font-weight: bold;
       text-transform: uppercase;
-      padding: .8rem .3rem;
+      padding: .8rem .5rem;
       border-radius: 25px;
       background-color: $darkGrey;
       border: none;
@@ -89,8 +89,7 @@
       margin-bottom: 4rem;
       
       &_button {
-        width: 30%;
-        letter-spacing: .2rem;
+        padding: .8rem .8rem;
       }
     }
   }
@@ -120,7 +119,6 @@
     &_buttons {
       
       &_button {
-        width: 200px;
         font-size: .8rem;
       }
     }
@@ -187,7 +185,6 @@
     &_buttons {
       
       &_button {
-        width: 300px;
         font-size: 1.2rem;
       }
     }
