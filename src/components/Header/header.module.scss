@@ -1,6 +1,9 @@
 @import "../../styles/vars.scss";
 
 .navigation {
+  position: fixed;
+  width: 100%;
+  top: 0;
 
   &_header {
     display: flex;
@@ -151,11 +154,11 @@
         color: $grey;
         text-decoration: none;
         display: block;
+        padding: .5rem 1.2rem;
         -webkit-transition: all .3s ease-in;
         -moz-transition: all .3s ease-in;
         -o-transition: all .3s ease-in;
         transition: all .3s ease-in;
-        padding: .5rem 1.2rem;
 
         &:hover {
           color: $blue;
