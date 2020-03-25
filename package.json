@@ -20,7 +20,8 @@
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "npm:@hot-loader/react-dom",
-    "react-icons": "^3.9.0"
+    "react-icons": "^3.9.0",
+    "react-modal-image": "^2.5.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
