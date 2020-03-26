@@ -9,9 +9,9 @@ import layoutStyles from "./layout.module.scss";
 const Layout = ({children,}) => {
 
   return (
-    <div>
+    <div className={layoutStyles.container}>
       <Header />
-      <main className={layoutStyles.container}>{children}</main>
+      <main className={layoutStyles.container_main}>{children}</main>
     </div>
   );
 };
