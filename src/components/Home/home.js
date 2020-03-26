@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className={homeStyles.container}>
       <div className={homeStyles.home}>
-        <div className={homeStyles.home_title}>
+        <h1 className={homeStyles.home_title}>
           <p>
             <span className={homeStyles.bounce}>B</span>
             <span className={homeStyles.bounce}>o</span>
@@ -54,7 +54,7 @@ const Home = () => {
             <span className={homeStyles.bounce}>e</span>
             <span className={homeStyles.bounce}>b</span>
           </p>
-        </div>
+        </h1>
         <p className={homeStyles.home_text}>Développeur Front End - React</p>
         <div className={homeStyles.home_buttons}>
           <button className={homeStyles.home_buttons_button}>Me contacter</button>

@@ -6,3 +6,11 @@
     font-family: 'PoppinsBold';
     src: url("../fonts/Poppins-Bold.ttf");
 }
+@font-face {
+    font-family: 'RobotoCondensedBold';
+    src: url("../fonts/RobotoCondensed-Bold.ttf");
+}
+@font-face {
+    font-family: 'RobotoCondensedRegular';
+    src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
