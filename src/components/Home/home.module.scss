@@ -70,6 +70,8 @@
 @media only screen and (min-width: 768px) {
    
   .home {
+
+    margin-top: 4rem;
     
     &_title {
       font-size: 2.5rem;
@@ -95,7 +97,7 @@
   }
   
   .gif {
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
   }
 }
@@ -125,14 +127,14 @@
   }
   
   .gif {
-    width: 30%;
+    width: 32%;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   
   .container {
-   margin: 8rem auto;
+   margin: 8rem 3rem;
   }
   
   .home {
@@ -153,6 +155,13 @@
     }
   }
   
+  .gif {
+    width: 30%;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
   .gif {
     width: 25%;
     margin: 0;
