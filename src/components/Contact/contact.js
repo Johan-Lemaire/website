@@ -19,7 +19,13 @@ const Contact = () => {
         <span className={contactStyles.bounce}>e</span>
         <span className={contactStyles.bounce}>r</span>
       </h1>
-      <form className={contactStyles.contact_form} name="contact" method="POST" netlify>
+      <form 
+        className={contactStyles.contact_form} 
+        name="contact" 
+        method="post" 
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <p className={contactStyles.contact_form_line}>
           <input className={contactStyles.contact_form_line_input} type="text" name="name" placeholder="Nom"/>  
         </p>
