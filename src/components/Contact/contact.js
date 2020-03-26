@@ -22,7 +22,8 @@ const Contact = () => {
       <form 
         className={contactStyles.contact_form} 
         name="contact" 
-        method="post" 
+        method="post"
+        action="/success"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
@@ -39,7 +40,7 @@ const Contact = () => {
           <textarea className={contactStyles.contact_form_line_textArea} name="message" placeholder="Votre message..."></textarea>
         </p>
         <p className={contactStyles.contact_form_line}>
-          <button className={contactStyles.contact_form_line_button} type="submit">Envoyer</button>
+          <button className={contactStyles.contact_form_line_button}>Envoyer</button>
         </p>
       </form>
     </div>
