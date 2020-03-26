@@ -27,6 +27,8 @@ const Contact = () => {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
+        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+        <input type="hidden" name="form-name" value="contact" />
         <p className={contactStyles.contact_form_line}>
           <input className={contactStyles.contact_form_line_input} type="text" name="name" placeholder="Nom"/>  
         </p>
