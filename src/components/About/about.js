@@ -21,7 +21,7 @@ const About = () => {
         Professionnellement connecté au monde du développement web depuis une année.
       </p>
       <p className={aboutStyles.about_text}>
-        Je suis une personne bien organisé dans son travail qui est sensible au rendu final et a le souci du détail.
+        Je suis une personne bien organisée dans son travail qui est sensible au rendu final et qui a le souci du détail.
         Je suis passionné par l&apos;univers du gaming, de l&apos;environnement informatique, de formule 1 et plus récemment la science de l&apos;univers.
       </p>
       <p className={aboutStyles.about_text}>
