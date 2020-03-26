@@ -14,7 +14,7 @@
   &_form {
     
     &_line {
-          
+      
       &_input, &_textArea {
         width: 100%;
         box-sizing: border-box;
@@ -23,9 +23,9 @@
         padding: .6rem 1rem;
         margin-bottom: 1rem;
         font-size: 1rem;
-        background-color: $grey;
-        color: $lightGrey;
+        color: $grey;
         outline: none;
+        background-color: #2B2B2B;
 
         &:focus {
           -webkit-box-shadow: inset 0px 0px 0px 2px $blue;
@@ -36,6 +36,7 @@
           -moz-transition: all .3s ease-out;
           -o-transition: all .3s ease-out;
           transition: all .3s ease-out;
+          color: white;
         }
       }
 
