@@ -40,7 +40,7 @@ const Contact = () => {
           <textarea className={contactStyles.contact_form_line_textArea} name="message" placeholder="Votre message..."></textarea>
         </p>
         <p className={contactStyles.contact_form_line}>
-          <button className={contactStyles.contact_form_line_button}>Envoyer</button>
+          <button className={contactStyles.contact_form_line_button} type="submit">Envoyer</button>
         </p>
       </form>
     </div>
