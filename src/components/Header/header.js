@@ -12,7 +12,7 @@ import {
 } from "react-icons/ai";
 
 import headerStyles from "./header.module.scss";
-import logo from "../../ressources/images/logo.png";
+import logo from "../../ressources/images/logo.svg";
 
 const Header = () => {
 

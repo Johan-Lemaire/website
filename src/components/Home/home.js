@@ -11,7 +11,7 @@ const Home = () => {
     setGif(logo3d);
   });
 
-  const completeSentence = "Bonjour !, Johan Lemaire, Développeur Web";
+  const completeSentence = "Bonjour !, Je suis Johan, Développeur Web";
   const allCharacters = completeSentence.split("");
 
   let stepTimer = 200;
