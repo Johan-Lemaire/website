@@ -229,6 +229,7 @@
   color: $blue;
 }
 
+// Override the css class to be able to suppress an unwanted animation
 .styles_typicalWrapper__1_Uvh::after {
   content: "" !important;
 }
