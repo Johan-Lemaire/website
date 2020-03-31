@@ -19,6 +19,8 @@
     font-size: 0.8rem;
     color: $grey;
     letter-spacing: 0.2rem;
+    animation: tracking-in-contract-bck-bottom 1s cubic-bezier(.215,.61,.355,1.000) both;
+    animation-delay: 3.5s;
   }
   
   &_buttons {
@@ -47,6 +49,8 @@
       -moz-transition: all .3s ease-out;
       -o-transition: all .3s ease-out;
       transition: all .3s ease-out;
+      animation:slide-in-left 1s cubic-bezier(.25,.46,.45,.94) both;
+      animation-delay: 4s;
       
       &:hover {
         -webkit-box-shadow: none;
@@ -224,3 +228,6 @@
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   color: $blue;
 }
+
+@keyframes tracking-in-contract-bck-bottom{0%{letter-spacing:0em;transform:translateZ(400px) translateY(300px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);opacity:1}}
+@keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}

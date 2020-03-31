@@ -1,4 +1,5 @@
 import React, { useState, useEffect,} from "react";
+import Typical from "react-typical";
 
 import homeStyles from "./home.module.scss";
 import logo3d from "../../ressources/images/logo3d.gif";
@@ -10,49 +11,45 @@ const Home = () => {
     setGif(logo3d);
   });
 
+  const completeSentence = "Bonjour !, Johan Lemaire, Développeur Web";
+  const allCharacters = completeSentence.split("");
+
+  let stepTimer = 200;
+
   return (
     <div className={homeStyles.container}>
       <div className={homeStyles.home}>
         <h1 className={homeStyles.home_title}>
           <p>
-            <span className={homeStyles.bounce}>B</span>
-            <span className={homeStyles.bounce}>o</span>
-            <span className={homeStyles.bounce}>n</span>
-            <span className={homeStyles.bounce}>j</span>
-            <span className={homeStyles.bounce}>o</span>
-            <span className={homeStyles.bounce}>u</span>
-            <span className={homeStyles.bounce}>r</span>
-            <span className={homeStyles.bounce}>,</span>
-          </p>
-          <p>
-            <span className={homeStyles.bounce}>J</span>
-            <span className={homeStyles.bounce}>e&nbsp;</span>
-            <span className={homeStyles.bounce}>s</span>
-            <span className={homeStyles.bounce}>u</span>
-            <span className={homeStyles.bounce}>i</span>
-            <span className={homeStyles.bounce}>s&nbsp;</span>
-            <span className={homeStyles.home_title_letter}>J</span>
-            <span className={homeStyles.bounce}>o</span>
-            <span className={homeStyles.bounce}>h</span>
-            <span className={homeStyles.bounce}>a</span>
-            <span className={homeStyles.bounce}>n</span>
-            <span className={homeStyles.bounce}>,</span>
-          </p>
-          <p>
-            <span className={homeStyles.bounce}>D</span>
-            <span className={homeStyles.bounce}>é</span>
-            <span className={homeStyles.bounce}>v</span>
-            <span className={homeStyles.bounce}>e</span>
-            <span className={homeStyles.bounce}>l</span>
-            <span className={homeStyles.bounce}>o</span>
-            <span className={homeStyles.bounce}>p</span>
-            <span className={homeStyles.bounce}>p</span>
-            <span className={homeStyles.bounce}>e</span>
-            <span className={homeStyles.bounce}>u</span>
-            <span className={homeStyles.bounce}>r&nbsp;</span>
-            <span className={homeStyles.bounce}>W</span>
-            <span className={homeStyles.bounce}>e</span>
-            <span className={homeStyles.bounce}>b</span>
+            {allCharacters.map((character) => {
+              stepTimer += 80;
+              switch(character) {
+              case ",":
+                return <br></br>;
+              case " ":
+                return " ";
+              case "J":
+                return (
+                  <Typical
+                    key={stepTimer}
+                    className= {homeStyles.home_title_letter}
+                    steps={[ stepTimer, character,]}
+                    loop={1}
+                    wrapper="span"
+                  />
+                );
+              default:
+                return (
+                  <Typical
+                    key={stepTimer}
+                    className= {homeStyles.bounce}
+                    steps={[ stepTimer, character,]}
+                    loop={1}
+                    wrapper="span"
+                  />
+                );
+              }
+            })}
           </p>
         </h1>
         <p className={homeStyles.home_text}>Développeur Front End - React</p>
