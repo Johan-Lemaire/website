@@ -8,6 +8,7 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    "gatsby-plugin-react-svg",
     "gatsby-plugin-sass",
     //gatsby-plugin-layout fixed the problem who renrending layout after switch a page
     {
@@ -17,5 +18,6 @@ module.exports = {
         component: require.resolve("./src/components/Layout/layout.js"),
       },
     },
+
   ],
 };

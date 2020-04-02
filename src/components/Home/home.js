@@ -1,15 +1,12 @@
-import React, { useState, useEffect,} from "react";
+import React from "react";
 import Typical from "react-typical";
+import { Link, } from "gatsby";
+import Logo from "../../ressources/images/logo_animation.svg";
 
 import homeStyles from "./home.module.scss";
-import logo3d from "../../ressources/images/logo3d.gif";
+import "./home.scss";
 
 const Home = () => {
-  const [gif, setGif,] = useState("");
-
-  useEffect(() => {
-    setGif(logo3d);
-  });
 
   const completeSentence = "Bonjour !, Je suis Johan, Développeur Web";
   const allCharacters = completeSentence.split("");
@@ -54,11 +51,11 @@ const Home = () => {
         </h1>
         <p className={homeStyles.home_text}>Développeur Front End - React</p>
         <div className={homeStyles.home_buttons}>
-          <button className={homeStyles.home_buttons_button}>Me contacter</button>
+          <Link to="/me-contacter"><button className={homeStyles.home_buttons_button}>Me contacter</button></Link>
           <button className={homeStyles.home_buttons_button}>Telecharger cv</button>
         </div>
       </div>
-      <img className={homeStyles.gif} src={gif}></img>
+      <Logo className={homeStyles.gif}/>
     </div>
   );
 };

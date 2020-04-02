@@ -1,0 +1,37 @@
+@import "../../styles/vars.scss";
+
+.st0 {
+  fill: none !important;
+  stroke-dasharray: 850;
+  stroke-dashoffset: 850;
+  animation: dashGrey 7s linear forwards;
+}
+
+.st1 {
+  fill: none !important;
+  stroke-dasharray: 850;
+  stroke-dashoffset: 850;
+  animation: dashBlue 7s linear forwards;
+}
+
+@keyframes dashGrey {
+  80% {
+    fill: $darkGrey;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    fill: lightGrey;
+  }
+}
+
+@keyframes dashBlue {
+  80% {
+    fill: $darkGrey;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    fill: $blue;
+  }
+}
