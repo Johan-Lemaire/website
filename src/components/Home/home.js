@@ -39,7 +39,8 @@ const Home = () => {
                 return (
                   <Typical
                     key={stepTimer}
-                    className= {`${homeStyles.bounce} ${homeStyles.styles_typicalWrapper__1_Uvh}`}
+                    className= {`bounce ${homeStyles.styles_typicalWrapper__1_Uvh} ${homeStyles.home_title_white}`}
+                    style= {{color: "white",}}
                     steps={[ stepTimer, character,]}
                     loop={1}
                     wrapper="span"

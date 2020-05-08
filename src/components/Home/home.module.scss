@@ -11,7 +11,11 @@
       font-size: 2.3rem;
       color: $blue;
       text-shadow: -2px 0 $lightGrey, -2px 0 $lightGrey;
-    }  
+    }
+
+    &_white {
+      color: white;
+    }
   }
   
   &_text {
@@ -33,18 +37,14 @@
     
     &_button {
       cursor: pointer;
-      color: $blue;
+      color: $darkGrey;
       font-size: .8rem;
       letter-spacing: .1rem;
       text-transform: uppercase;
       padding: .8rem .5rem;
       border-radius: 25px;
-      background-color: $darkGrey;
+      background-color: $blue;
       border: none;
-      -webkit-box-shadow: inset 0px 0px 0px 1px $blue;
-      -moz-box-shadow: inset 0px 0px 0px 1px $blue;
-      -o-box-shadow: inset 0px 0px 0px 1px $blue;
-      box-shadow: inset 0px 0px 0px 1px $blue;
       outline: none;
       -webkit-transition: all .3s ease-out;
       -moz-transition: all .3s ease-out;
@@ -54,11 +54,12 @@
       animation-delay: 4s;
       
       &:hover {
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        background-color: $blue;
-        color: $darkGrey;
+        -webkit-box-shadow: inset 0px 0px 0px 2px $blue;
+        -moz-box-shadow: inset 0px 0px 0px 2px $blue;
+        -o-box-shadow: inset 0px 0px 0px 2px $blue;
+        box-shadow: inset 0px 0px 0px 2px $blue;
+        background-color: $darkGrey;
+        color: $blue;
       }
     }
   }
@@ -113,7 +114,7 @@
   .container {
     display: flex;
     justify-content: space-around;
-    margin: 15rem auto;
+    margin: 13rem auto;
   }
   
   .home {
@@ -133,14 +134,14 @@
   }
   
   .gif {
-    width: 32%;
+    width: 25%;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   
   .container {
-   margin: 10rem 3rem;
+   margin: 8rem 3rem;
   }
   
   .home {
@@ -169,7 +170,7 @@
   }
   
   .gif {
-    width: 34%;
+    width: 25%;
     margin: 0;
   }
 }
@@ -210,26 +211,6 @@
       }
     }
   }
-}
-
-// A bounce effect on the letters on hover
-.bounce {
-  display: inline-block;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.3s;
-}
-.bounce:hover, .bounce:focus, .bounce:active {
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -o-transform: scale(1.3);
-  transform: scale(1.3);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  -moz-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  -o-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  color: $blue;
 }
 
 // Override the css class to be able to suppress an unwanted animation

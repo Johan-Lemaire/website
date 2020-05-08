@@ -7,17 +7,17 @@ const Contact = () => {
   return (
     <div className={contactStyles.contact}>
       <h1 className={contactStyles.contact_title}>
-        <span className={contactStyles.bounce}>M</span>
-        <span className={contactStyles.bounce}>e&nbsp;</span>
-        <span className={contactStyles.bounce}>c</span>
-        <span className={contactStyles.bounce}>o</span>
-        <span className={contactStyles.bounce}>n</span>
-        <span className={contactStyles.bounce}>t</span>
-        <span className={contactStyles.bounce}>a</span>
-        <span className={contactStyles.bounce}>c</span>
-        <span className={contactStyles.bounce}>t</span>
-        <span className={contactStyles.bounce}>e</span>
-        <span className={contactStyles.bounce}>r</span>
+        <span className="bounce">M</span>
+        <span className="bounce">e&nbsp;</span>
+        <span className="bounce">c</span>
+        <span className="bounce">o</span>
+        <span className="bounce">n</span>
+        <span className="bounce">t</span>
+        <span className="bounce">a</span>
+        <span className="bounce">c</span>
+        <span className="bounce">t</span>
+        <span className="bounce">e</span>
+        <span className="bounce">r</span>
       </h1>
       <form 
         className={contactStyles.contact_form} 
