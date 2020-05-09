@@ -1,7 +1,7 @@
 import React from "react";
 
 const Success = () => (
-  <h1>Bravo</h1>
+  <h1>Votre message a été envoyé</h1>
 );
 
 export default Success;

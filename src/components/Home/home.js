@@ -1,6 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
-import { Link, } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Logo from "../../ressources/images/logo_animation.svg";
 
 import homeStyles from "./home.module.scss";
@@ -52,7 +52,15 @@ const Home = () => {
         </h1>
         <p className={homeStyles.home_text}>Développeur Front End - React</p>
         <div className={homeStyles.home_buttons}>
-          <Link to="/me-contacter"><button className={homeStyles.home_buttons_button}>Me contacter</button></Link>
+          <AniLink
+            cover
+            direction="left"
+            duration={2}
+            bg="#111111"
+            to="/me-contacter"
+          >
+            <button className={homeStyles.home_buttons_button}>Me contacter</button>
+          </AniLink>
           <button className={homeStyles.home_buttons_button}>Telecharger cv</button>
         </div>
       </div>

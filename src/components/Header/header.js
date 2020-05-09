@@ -1,5 +1,5 @@
 import React, { useState,} from "react";
-import {Link,} from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import {GiHamburgerMenu,} from "react-icons/gi";
 import {
   AiOutlineHome,
@@ -11,7 +11,6 @@ import {
   AiOutlineFacebook,
 } from "react-icons/ai";
 
-import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import headerStyles from "./header.module.scss";
 import logo from "../../ressources/images/logo.png";
@@ -31,10 +30,16 @@ const Header = () => {
   return (
     <header className={headerStyles.navigation}>
       <div className={headerStyles.navigation_header}>
-        <Link to="/" className={headerStyles.navigation_header_logoText}>
+        <AniLink
+          cover
+          direction="left"
+          duration={2}
+          bg="#111111"
+          to="/" 
+          className={headerStyles.navigation_header_logoText}>
           <img src={logo} alt="logo du site" className={headerStyles.navigation_header_logoText_img}></img>
           <p>Johan</p>
-        </Link>
+        </AniLink>
         <GiHamburgerMenu className={headerStyles.navigation_header_burgerIcon} onClick={showMenu}/>
       </div>
       <nav className={`${headerStyles.navigation_bar} ${menuStatus}`}>
