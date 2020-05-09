@@ -11,6 +11,8 @@ import {
   AiOutlineFacebook,
 } from "react-icons/ai";
 
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 import headerStyles from "./header.module.scss";
 import logo from "../../ressources/images/logo.png";
 
@@ -38,44 +40,60 @@ const Header = () => {
       <nav className={`${headerStyles.navigation_bar} ${menuStatus}`}>
         <ul className={headerStyles.navigation_bar_list}>
           <li>
-            <Link 
+            <AniLink
+              cover
+              direction="left"
+              duration={2}
+              bg="#111111"
               to="/" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link}
               data-hover="ACCUEIL"
             >
               <AiOutlineHome className={headerStyles.navigation_bar_list_link_icon} />
-            </Link>
+            </AniLink>
           </li>
           <li>
-            <Link 
+            <AniLink
+              cover
+              direction="left"
+              duration={2}
+              bg="#111111"
               to="/a-propos" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link} 
               data-hover="A&nbsp;PROPOS"
             >
               <AiOutlineUser className={headerStyles.navigation_bar_list_link_icon} />
-            </Link>
+            </AniLink>
           </li>
           <li>
-            <Link 
+            <AniLink 
+              cover
+              direction="left"
+              duration={2}
+              bg="#111111"
               to="/projets" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link}
               data-hover="PROJETS"
             >
               <AiOutlineEye className={headerStyles.navigation_bar_list_link_icon} />
-            </Link>
+            </AniLink>
           </li>
           <li>
-            <Link 
+            <AniLink 
+              cover
+              direction="left"
+              duration={2}
+              bg="#111111"
               to="/me-contacter" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link} 
               data-hover="CONTACT"
             >
               <AiOutlineMail className={headerStyles.navigation_bar_list_link_icon} />
-            </Link>
+            </AniLink>
           </li>
         </ul>
         <ul className={headerStyles.navigation_socialList}>

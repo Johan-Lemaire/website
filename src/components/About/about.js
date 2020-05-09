@@ -9,13 +9,13 @@ const About = () => {
   return (
     <div className={aboutStyles.about}>
       <h1 className={aboutStyles.about_title}>
-        <span className={aboutStyles.bounce}>A&nbsp;</span>
-        <span className={aboutStyles.bounce}>p</span>
-        <span className={aboutStyles.bounce}>r</span>
-        <span className={aboutStyles.bounce}>o</span>
-        <span className={aboutStyles.bounce}>p</span>
-        <span className={aboutStyles.bounce}>o</span>
-        <span className={aboutStyles.bounce}>s</span>
+        <span className="bounce">A&nbsp;</span>
+        <span className="bounce">p</span>
+        <span className="bounce">r</span>
+        <span className="bounce">o</span>
+        <span className="bounce">p</span>
+        <span className="bounce">o</span>
+        <span className="bounce">s</span>
       </h1>
       <p className={aboutStyles.about_text}>
         Professionnellement connecté au monde du développement web depuis une année.
