@@ -4,6 +4,7 @@
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 10;
 
   &_header {
     display: flex;
@@ -41,9 +42,7 @@
     opacity: 0;
     margin-left: 0;
     float: left;
-    overflow: hidden;
     text-align: center;
-    margin-top: 0;
     -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
