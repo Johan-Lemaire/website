@@ -69,6 +69,19 @@
         margin-top: 5rem;
       }
     }
+    &_right {
+  
+      &_list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+  
+        &_item {
+          width: 40%;
+          margin: .8rem auto ;
+        }
+      }
+    }
   }
 }
 
@@ -102,14 +115,13 @@
       }
     }
     &_right {
-  
       width: 50%;
   
       &_list {
-  
+        margin: 0;
+        
         &_item {
           width: 40%;
-          margin: .8rem auto;
 
           &:hover {
             background-color: $blue;
