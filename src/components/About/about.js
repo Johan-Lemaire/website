@@ -45,6 +45,7 @@ const About = () => {
           <li className={`${aboutStyles.about_right_list_item} ${aboutStyles.about_right_list_item_npm}`}>Npm</li>
           <li className={`${aboutStyles.about_right_list_item} ${aboutStyles.about_right_list_item_yarn}`}>Yarn</li>
           <li className={`${aboutStyles.about_right_list_item} ${aboutStyles.about_right_list_item_git}`}>Git</li>
+          <li className={`${aboutStyles.about_right_list_item} ${aboutStyles.about_right_list_item_photo}`}>Photoshop</li>
         </ul>
       </div>
     </div>

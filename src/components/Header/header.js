@@ -103,7 +103,7 @@ const Header = () => {
         </ul>
         <ul className={headerStyles.navigation_socialList}>
           <li>
-            <a href="#" className={headerStyles.navigation_socialList_link}>
+            <a href="https://www.linkedin.com/in/johanlemaire/" target="blank" className={headerStyles.navigation_socialList_link}>
               <AiOutlineLinkedin className={headerStyles.navigation_socialList_link_icon} />
             </a>
           </li>
