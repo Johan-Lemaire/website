@@ -45,7 +45,6 @@ const Contact = () => {
           <button className={contactStyles.contact_form_line_button} type="submit">Envoyer</button>
         </p>
       </form>
-      <img src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDiz4h7xW00saMbD4PQGaw0ETYgpmR2OIQ&center=46.67009301542559,-1.2276748641852198&zoom=7&format=png&maptype=roadmap&style=feature:administrative.country%7Celement:geometry.stroke%7Ccolor:0xffffff%7Cweight:1.5&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text%7Ccolor:0x0092ca&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0x0092ca&style=feature:administrative.locality%7Celement:labels.text.stroke%7Cvisibility:off&style=feature:administrative.neighborhood%7Cvisibility:off&style=feature:landscape%7Celement:geometry.fill%7Ccolor:0x1d1d1d&style=feature:landscape%7Celement:geometry.stroke%7Ccolor:0xffffff&style=feature:poi%7Celement:geometry.fill%7Cvisibility:off&style=feature:poi%7Celement:labels.text%7Cvisibility:off&style=feature:poi.business%7Cvisibility:off&style=feature:road%7Cvisibility:off&style=feature:road%7Celement:labels%7Cvisibility:off&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:transit%7Cvisibility:off&style=feature:water%7Celement:geometry.fill%7Ccolor:0x0092ca&style=feature:water%7Celement:labels.text%7Cvisibility:off&size=480x360"></img>
     </div>
   );
 };
