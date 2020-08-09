@@ -49,7 +49,7 @@ const Header = () => {
               cover
               direction="left"
               duration={2}
-              bg="#111111"
+              bg="#0092ca"
               to="/" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link}

@@ -7,6 +7,9 @@
 // eslint-disable-next-line no-undef
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+
+  },
   plugins: [
     "gatsby-plugin-transition-link",
     "gatsby-plugin-react-svg",

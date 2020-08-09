@@ -1,8 +1,7 @@
 import React from "react";
-
 import projectsStyles from "./projects.module.scss";
 
-const Contact = () => {
+const Project = () => {
 
   return (
     <div className={projectsStyles.projects}>
@@ -19,4 +18,4 @@ const Contact = () => {
   );
 };
     
-export default Contact;
+export default Project;
