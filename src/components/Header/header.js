@@ -46,10 +46,10 @@ const Header = () => {
         <ul className={headerStyles.navigation_bar_list}>
           <li>
             <AniLink
-              cover
-              direction="left"
-              duration={2}
-              bg="#0092ca"
+              paintDrip
+              //direction="left"
+              duration={1}
+              hex="#0092ca"
               to="/" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link}
