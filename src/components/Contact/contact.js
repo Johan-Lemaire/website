@@ -1,6 +1,7 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 
+import Marker from "../../ressources/images/marker.svg";
 import contactStyles from "./contact.module.scss";
 import mapStyles from "./mapStyles";
 
@@ -62,7 +63,7 @@ const Contact = () => {
           options={{styles: mapStyles.theme,}}
         >
 
-        </GoogleMapReact>
+        </GoogleMapReact> 
       </div>
     </div>
   );
