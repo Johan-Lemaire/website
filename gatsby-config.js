@@ -14,7 +14,7 @@ module.exports = {
     "gatsby-plugin-transition-link",
     "gatsby-plugin-react-svg",
     "gatsby-plugin-sass",
-    //gatsby-plugin-layout fixed the problem who renrending layout after switch a page
+    //gatsby-plugin-layout fixed the problem who rerending layout after switch a page
     {
       resolve: "gatsby-plugin-layout",
       options: {

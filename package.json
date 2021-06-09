@@ -19,6 +19,7 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^2.1.31",
     "gatsby-plugin-transition-link": "^1.18.0",
+    "google-map-react": "^2.1.9",
     "gsap": "^3.2.6",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",

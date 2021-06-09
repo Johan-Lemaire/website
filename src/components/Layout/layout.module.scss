@@ -1,8 +1,6 @@
 .container {
 
   &_main {
-    margin: 9rem auto 0;
-    width: 80%;
 
     &_particles {
       position: absolute;
@@ -17,10 +15,5 @@
 @media only screen and (min-width: 768px) {
   .container {
     
-    &_main {
-      width: calc(100% - 240px);
-      margin: 3rem auto 0;
-      padding-right: 60px;
-    }
   }
 }
