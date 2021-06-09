@@ -6,7 +6,6 @@ import mapStyles from "./mapStyles";
 
 const Contact = () => {
 
-  console.log(process.env.GATSBY_APP_API_KEY);
   return (
     <div className={contactStyles.contact}>
       <div className={contactStyles.contact_left}>
