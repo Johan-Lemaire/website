@@ -6,10 +6,6 @@ import mapStyles from "./mapStyles";
 
 const Contact = () => {
 
-  const API_KEY = process.env.GOOGLE_MAP_API_KEY;
-
-  console.log(API_KEY);
-
   return (
     <div className={contactStyles.contact}>
       <div className={contactStyles.contact_left}>
@@ -56,7 +52,7 @@ const Contact = () => {
       {/* // Important! Always set the container height explicitly */}
       <div className={contactStyles.contact_right}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: API_KEY, }}
+          bootstrapURLKeys={{ key: process.env.GOOGLE_MAP_API_KEY, }}
           defaultCenter={{
             lat: 48.959356,
             lng: 4.376734,
