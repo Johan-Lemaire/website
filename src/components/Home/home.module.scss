@@ -27,7 +27,7 @@
     color: $grey;
     letter-spacing: 0.15rem;
     animation: tracking-in-contract-bck-bottom 1s cubic-bezier(.215,.61,.355,1.000) both;
-    animation-delay: 3.5s;
+    animation-delay: 2.5s;
   }
   
   &_buttons {
@@ -54,7 +54,7 @@
       -o-transition: all .3s ease-out;
       transition: all .3s ease-out;
       animation:slide-in-left 1s cubic-bezier(.25,.46,.45,.94) both;
-      animation-delay: 4s;
+      animation-delay: 3s;
       
       &:hover {
         -webkit-box-shadow: inset 0px 0px 0px 2px $blue;

@@ -19,14 +19,14 @@ const About = () => {
           <span className="bounce">s</span>
         </h1>
         <p className={aboutStyles.about_left_text}>
-          Professionnellement connecté au monde du développement web depuis une année.
+          Professionnellement connecté au monde du développement web depuis plus d'une année.
         </p>
         <p className={aboutStyles.about_left_text}>
           Je suis une personne bien organisée dans son travail qui est sensible au rendu final et qui a le souci du détail.
           Je suis passionné par l&apos;univers du gaming, de l&apos;environnement informatique, de formule 1 et plus récemment la science de l&apos;univers.
         </p>
         <p className={aboutStyles.about_left_text}>
-          Intéressé par tout ce qui touche la face visible d&apos;un projet, le front-end, et toujours
+          Intéressé par tout ce qui touche la face visible d&apos;un projet, par l'apprentissage de nouvelles technologies et toujours
           curieux d&apos;en apprendre plus chaque jour, j&apos;ai pour ambition de travailler sur de nouveaux projets avec d&apos;autres personnes
           et apporter ma positivité et mon énergie sur le plan humain et professionel.
         </p>

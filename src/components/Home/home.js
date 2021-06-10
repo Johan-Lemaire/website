@@ -8,8 +8,10 @@ import "./home.scss";
 
 const Home = () => {
 
-  const completeSentence = "Bonjour !, Je suis Johan, Développeur Web";
-  const allCharacters = completeSentence.split("");
+  const pageTitle = "Bonjour, Je suis Johan, Développeur Web";
+  const allCharacters = pageTitle.split("");
+
+  console.log(allCharacters);
 
   let stepTimer = 200;
 
@@ -19,7 +21,7 @@ const Home = () => {
         <h1 className={homeStyles.home_title}>
           <p>
             {allCharacters.map((character) => {
-              stepTimer += 80;
+              stepTimer += 50;
               switch(character) {
               case ",":
                 return <br></br>;

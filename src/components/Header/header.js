@@ -31,10 +31,9 @@ const Header = () => {
     <header className={headerStyles.navigation}>
       <div className={headerStyles.navigation_header}>
         <AniLink
-          cover
-          direction="left"
-          duration={2}
-          bg="#111111"
+          paintDrip
+          duration={1}
+          hex="#111111"
           to="/" 
           className={headerStyles.navigation_header_logoText}>
           <img src={logo} alt="logo du site" className={headerStyles.navigation_header_logoText_img}></img>
@@ -47,9 +46,8 @@ const Header = () => {
           <li>
             <AniLink
               paintDrip
-              //direction="left"
               duration={1}
-              hex="#0092ca"
+              hex="#111111"
               to="/" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link}
@@ -60,10 +58,9 @@ const Header = () => {
           </li>
           <li>
             <AniLink
-              cover
-              direction="left"
-              duration={2}
-              bg="#111111"
+              paintDrip
+              duration={1}
+              hex="#111111"
               to="/a-propos" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link} 
@@ -74,10 +71,9 @@ const Header = () => {
           </li>
           <li>
             <AniLink 
-              cover
-              direction="left"
-              duration={2}
-              bg="#111111"
+              paintDrip
+              duration={1}
+              hex="#111111"
               to="/projets" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link}
@@ -88,10 +84,9 @@ const Header = () => {
           </li>
           <li>
             <AniLink 
-              cover
-              direction="left"
-              duration={2}
-              bg="#111111"
+              paintDrip
+              duration={1}
+              hex="#111111"
               to="/me-contacter" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link} 
