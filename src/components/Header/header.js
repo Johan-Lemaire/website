@@ -48,7 +48,7 @@ const Header = () => {
               paintDrip
               duration={1}
               hex="#111111"
-              to="/" 
+              to="/"
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link}
               data-hover="ACCUEIL"

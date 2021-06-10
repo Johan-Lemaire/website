@@ -86,6 +86,14 @@
     margin: 5rem 0;
     width: 100%;
     height: 500px;
+
+    &_marker {
+      padding: .5rem;
+      height: 2rem;
+      width: 2rem;
+      background-color: $black;
+      border-radius: 100%;
+    }
   }
 }
 

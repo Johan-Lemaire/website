@@ -1,9 +1,10 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 
-import Marker from "../../ressources/images/marker.svg";
 import contactStyles from "./contact.module.scss";
 import mapStyles from "./mapStyles";
+
+import Logo from "../../ressources/images/logo.svg"
 
 const Contact = () => {
 
@@ -57,12 +58,15 @@ const Contact = () => {
           defaultCenter={{
             lat: 48.959356,
             lng: 4.376734,
-            text: "Johan",
           }}
           defaultZoom={8}
           options={{styles: mapStyles.theme,}}
         >
-
+          <Logo 
+            className={`bounce ${contactStyles.contact_right_marker}`}
+            lat= {48.959356}
+            lng= {4.376734}
+          />
         </GoogleMapReact> 
       </div>
     </div>
