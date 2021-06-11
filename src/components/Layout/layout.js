@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Header from "../Header/header";
-import Particles from 'react-particles-js';
+import Particles from "react-particles-js";
 
 import "../../styles/reset.css";
 import "../../styles/global.scss";

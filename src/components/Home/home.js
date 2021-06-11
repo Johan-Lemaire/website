@@ -11,14 +11,12 @@ const Home = () => {
   const pageTitle = "Bonjour, Je suis Johan, Développeur Web";
   const allCharacters = pageTitle.split("");
 
-  console.log(allCharacters);
-
   let stepTimer = 200;
 
   return (
     <div className={homeStyles.container}>
-      <div className={homeStyles.home}>
-        <h1 className={homeStyles.home_title}>
+      <div className={homeStyles.container_home}>
+        <h1 className={homeStyles.container_home_title}>
           <p>
             {allCharacters.map((character) => {
               stepTimer += 50;
@@ -31,7 +29,7 @@ const Home = () => {
                 return (
                   <Typical
                     key={stepTimer}
-                    className= {`${homeStyles.home_title_letter} ${homeStyles.styles_typicalWrapper__1_Uvh}`}
+                    className= {`${homeStyles.container_home_title_letter} ${homeStyles.styles_typicalWrapper__1_Uvh}`}
                     steps={[ stepTimer, character,]}
                     loop={1}
                     wrapper="span"
@@ -41,7 +39,7 @@ const Home = () => {
                 return (
                   <Typical
                     key={stepTimer}
-                    className= {`bounce ${homeStyles.styles_typicalWrapper__1_Uvh} ${homeStyles.home_title_white}`}
+                    className= {`bounce ${homeStyles.styles_typicalWrapper__1_Uvh} ${homeStyles.container_home_title_white}`}
                     style= {{color: "white",}}
                     steps={[ stepTimer, character,]}
                     loop={1}
@@ -52,21 +50,20 @@ const Home = () => {
             })}
           </p>
         </h1>
-        <p className={homeStyles.home_text}>Développeur Front End - React</p>
-        <div className={homeStyles.home_buttons}>
+        <p className={homeStyles.container_home_text}>Développeur Front End - React</p>
+        <div className={homeStyles.container_home_buttons}>
           <AniLink
-            cover
-            direction="left"
-            duration={2}
-            bg="#111111"
+            paintDrip
+            duration={1}
+            hex="#111111"
             to="/me-contacter"
           >
-            <button className={homeStyles.home_buttons_button}>Me contacter</button>
+            <button className={homeStyles.container_home_buttons_button}>Me contacter</button>
           </AniLink>
-          <button className={homeStyles.home_buttons_button}>Telecharger cv</button>
+          <button className={homeStyles.container_home_buttons_button}>Telecharger cv</button>
         </div>
       </div>
-      <Logo className={homeStyles.gif}/>
+      <Logo className={homeStyles.container_gif}/>
     </div>
   );
 };
