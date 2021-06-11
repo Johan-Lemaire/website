@@ -64,7 +64,7 @@ const Header = () => {
               to="/a-propos" 
               activeClassName={headerStyles.navigation_bar_list_link_active}
               className={headerStyles.navigation_bar_list_link} 
-              data-hover="A&nbsp;PROPOS"
+              data-hover="À&nbsp;PROPOS"
             >
               <AiOutlineUser className={headerStyles.navigation_bar_list_link_icon} />
             </AniLink>

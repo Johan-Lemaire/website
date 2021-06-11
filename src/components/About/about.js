@@ -10,7 +10,7 @@ const About = () => {
     <div className={aboutStyles.about}>
       <div className={aboutStyles.about_left}>
         <h1 className={aboutStyles.about_left_title}>
-          <span className="bounce">A&nbsp;</span>
+          <span className="bounce">À&nbsp;</span>
           <span className="bounce">p</span>
           <span className="bounce">r</span>
           <span className="bounce">o</span>
