@@ -60,7 +60,7 @@ const Home = () => {
           >
             <button className={homeStyles.container_home_buttons_button}>Me contacter</button>
           </AniLink>
-          <button className={homeStyles.container_home_buttons_button}>Telecharger cv</button>
+          <a href="https://drive.google.com/file/d/13N0BPbMcFi59as9hyjAcR_c-lhIXZg44/view?usp=sharing" target="blank"><button className={homeStyles.container_home_buttons_button}>Telecharger cv</button></a>
         </div>
       </div>
       <Logo className={homeStyles.container_gif}/>

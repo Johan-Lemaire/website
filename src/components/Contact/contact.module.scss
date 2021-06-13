@@ -30,12 +30,14 @@
           color: $grey;
           outline: none;
           background-color: #2B2B2B;
+
   
-          &:focus {
-            -webkit-box-shadow: inset 0px 0px 0px 2px $blue;
-            -moz-box-shadow: inset 0px 0px 0px 2px $blue;
-            -o-box-shadow: inset 0px 0px 0px 2px $blue;
-            box-shadow: inset 0px 0px 0px 2px $blue;
+          &:focus, &:hover {
+            
+            -webkit-box-shadow: inset 0px 0px 0px 1px $blue;
+            -moz-box-shadow: inset 0px 0px 0px 1px $blue;
+            -o-box-shadow: inset 0px 0px 0px 1px $blue;
+            box-shadow: inset 0px 0px 0px 1px $blue;
             -webkit-transition: all .3s ease-out;
             -moz-transition: all .3s ease-out;
             -o-transition: all .3s ease-out;
