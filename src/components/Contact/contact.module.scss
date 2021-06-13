@@ -97,49 +97,34 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
 
   .contact {
 
     display: flex;
+    padding: 0;
+    width: calc(100vw - 60px);
+    align-items: center;
 
     &_left {
 
-      width: 50%;
+      width: 40%;
+      padding-left: 5rem;
+      margin: auto;
 
       &_title {
+
         text-align: left;
         font-size: 3rem;
-        margin: 5rem 0;
-      }
-    }
-
-    &_right {
-      width: 50%;
-      height: 100vh;
-    }
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-
-  .contact {
-
-    padding: 0;
-
-    &_left {
-
-      &_title {
-        width: 80%;
-        text-align: left;
-        font-size: 4rem;
-        margin: 10rem auto 4rem;
+        margin: 5rem auto;
       }
 
       &_form {
+
         width: 80%;
-        margin: auto;
+        
         &_line {
+
           &_button {
             font-size: 1rem;
           }
@@ -148,8 +133,35 @@
     }
 
     &_right {
-      padding-right: 60px;
+      width: 50%;
+      height: 100vh;
       margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+
+  .contact {
+
+    &_left {
+
+      &_title {
+
+        font-size: 4rem;
+
+      }
+
+      &_form {
+        
+        &_line {
+
+          &_button {
+            font-size: 1.2rem;
+            padding: .8rem .6rem;
+          }
+        }
+      }
     }
   }
 }

@@ -4,7 +4,7 @@ import GoogleMapReact from "google-map-react";
 import contactStyles from "./contact.module.scss";
 import mapStyles from "./mapStyles";
 
-import Logo from "../../ressources/images/logo.svg"
+import Logo from "../../ressources/images/logo.svg";
 
 const Contact = () => {
 
@@ -54,7 +54,8 @@ const Contact = () => {
       {/* // Important! Always set the container height explicitly */}
       <div className={contactStyles.contact_right}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: process.env.GATSBY_APP_API_KEY }}
+          // eslint-disable-next-line no-undef
+          bootstrapURLKeys={{ key: process.env.GATSBY_APP_API_KEY, }}
           defaultCenter={{
             lat: 48.959356,
             lng: 4.376734,
